@@ -9,7 +9,7 @@ import utils
 # Get parameters
 #
 parser = argparse.ArgumentParser();
-parser.add_argument("--method", type=int, default = 3)
+parser.add_argument("--method", type=int, default = 3, help="0 - greedy search, 1 - sampling, 2 - top-k, 3 - top-p (default)")
 parser.add_argument("--length", type=int, default = 200, help = "Length of sample to create")
 parser.add_argument("--model", type=str, default = "model.pt", help = "Name of the model to load as starting point")
 parser.add_argument("--cpu", action="store_true", default = False, help = "Force usage of CPU even if GPU is available")
