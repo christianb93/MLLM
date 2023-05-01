@@ -102,9 +102,9 @@ print("Done saving model to model.pt, now writing losses")
 # Write losses into a file in GNUPLOT format
 #
 f = open("losses.dat", "w")
-f.write(f"# Total training time: {end_time - start_time}")
+f.write(f"# Total training time: {end_time - start_time}\n")
 for epoch, loss in enumerate(val_losses):
-    f.write(f"# Epoch {epoch} --> validation loss {loss}")    
+    f.write(f"# Epoch {epoch} --> validation loss {loss}\n")    
 f.write("plot '-' with lines linecolor 'blue'\n")
 for i, l in enumerate(losses):
     f.write(f"{i}   {l}\n")
