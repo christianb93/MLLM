@@ -5,3 +5,4 @@ portalocker==2.7.0
 matplotlib==3.7.1
 transformers==4.27.4
 streamlit==1.23.1
+sentencepiece==0.1.97
